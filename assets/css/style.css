@@ -4,7 +4,7 @@ body {
 }
 
 section {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -12,8 +12,9 @@ header {
   background-color: rgb(255, 255, 255);
 }
 
+/* --------------------------------------------------- */
+
 #header {
-  /* border: 2px solid black; */
   padding: 10px 0;
 }
 
@@ -36,6 +37,13 @@ header {
 
 #logo {
   width: 26%;
+  transition: 0.8s ease-in-out;
+}
+
+#logo:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.8s ease-in-out;
 }
 
 #header input {
@@ -47,7 +55,7 @@ header {
 }
 
 .flex-justify-between {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .flex-align-items-center {
@@ -68,6 +76,7 @@ nav li {
 }
 
 nav li:hover {
+  cursor: pointer;
   background-color: rgb(227, 227, 227);
   transition: 0.5s ease-in-out;
 }
@@ -79,12 +88,7 @@ nav li:last-child {
   padding-left: 20px;
 }
 nav li:last-child:hover {
-  /* background-color: rgba(
-    rgb(0rgb (0, 0, 0) 0),
-    rgb(2, 2, 2),
-    rgb(0, 0, 0),
-    0.2
-  ); */
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.785);
 }
 
@@ -93,5 +97,101 @@ nav li:last-child:hover {
 /* ---------------MAIN---------------- */
 
 h1 {
-  font-weight: bold;
+  font-family: TS-Med, sans-serif;
+  font-size: 54px;
+  margin: 40px 0;
+}
+
+h1 span {
+  color: #ff5e5d;
+}
+
+#part {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.bloc-part {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  transition: 0.5s ease-in-out;
+}
+
+.bloc-part:hover {
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+/* ------------------PICTURES-------------------- */
+/* ------------------PICTURES-------------------- */
+/* ------------------PICTURES-------------------- */
+
+#pictures {
+  display: flex;
+  gap: 5px;
+  margin: 30px 0;
+}
+
+#picture-principal {
+  width: 60%;
+  height: 360px;
+  background-image: url("../img/island.jpg");
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 10px 0 0 10px;
+  transition: 0.6s ease-in-out;
+}
+
+#picture-principal:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.6s ease-in-out;
+  scale: 1.01;
+}
+
+#picture-second {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 40%;
+  height: 360px;
+}
+
+#picture-second div:first-child {
+  height: calc(360px / 2);
+  background-image: url("../img/marais-kaw.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 10px 0 0;
+  transition: 0.6s ease-in-out;
+}
+
+#picture-second div:first-child:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.6s ease-in-out;
+  scale: 1.01;
+}
+
+#picture-second div:last-child {
+  height: calc(360px / 2);
+  background-image: url("../img/house.jpg");
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 0 0 10px 0;
+  transition: 0.6s ease-in-out;
+}
+
+#picture-second div:last-child:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.6s ease-in-out;
+  scale: 1.01;
 }
