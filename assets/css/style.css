@@ -1,1 +1,97 @@
+/* ------------- GENERAL ------------- */
+body {
+  font-family: TS-Reg, sans-serif;
+}
 
+section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+}
+
+#header {
+  /* border: 2px solid black; */
+  padding: 10px 0;
+}
+
+#header > div:first-child {
+  width: 55%;
+}
+
+#header div:last-child {
+  border: 1px solid rgba(104, 104, 104, 0.525);
+  border-radius: 30px;
+  padding: 5px 15px;
+  width: 400px;
+  column-gap: 12px;
+}
+
+#header input {
+  padding: 8px;
+  width: 345px;
+}
+
+#logo {
+  width: 26%;
+}
+
+#header input {
+  border: none;
+}
+
+.display-flex-row {
+  display: flex;
+}
+
+.flex-justify-between {
+  justify-content: space-around;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
+.flex-column-gap {
+  column-gap: 10px;
+}
+
+/* --------NAVBAR---------- */
+nav li {
+  padding: 12px 8px;
+  border-radius: 20px;
+  font-size: 1em;
+  column-gap: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+nav li:hover {
+  background-color: rgb(227, 227, 227);
+  transition: 0.5s ease-in-out;
+}
+
+nav li:last-child {
+  background-color: black;
+  color: #fff;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+nav li:last-child:hover {
+  /* background-color: rgba(
+    rgb(0rgb (0, 0, 0) 0),
+    rgb(2, 2, 2),
+    rgb(0, 0, 0),
+    0.2
+  ); */
+  background-color: rgba(0, 0, 0, 0.785);
+}
+
+/* ---------------MAIN---------------- */
+/* ---------------MAIN---------------- */
+/* ---------------MAIN---------------- */
+
+h1 {
+  font-weight: bold;
+}
