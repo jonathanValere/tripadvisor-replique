@@ -46,6 +46,8 @@ footer {
   font-size: 0.8em;
   text-align: center;
   padding: 8px 0;
+  position: fixed;
+  width: 100%;
 }
 
 #information p::selection {
@@ -58,9 +60,11 @@ footer {
 }
 
 /* -------------------HEADER--------------------------- */
+/* -------------------HEADER--------------------------- */
+/* -------------------HEADER--------------------------- */
 
 #header {
-  padding: 10px 0;
+  padding: 45px 0 10px 0;
 }
 
 #header > div:first-child {
@@ -111,6 +115,8 @@ footer {
   column-gap: 10px;
 }
 
+/* --------NAVBAR---------- */
+/* --------NAVBAR---------- */
 /* --------NAVBAR---------- */
 header nav li {
   padding: 12px 8px;
@@ -175,7 +181,7 @@ h1 span {
 #pictures {
   display: flex;
   gap: 3px;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 15px 0;
 }
 
 #picture-principal {
@@ -244,7 +250,7 @@ h1 span {
 
 #breadcrumb-site ul {
   display: flex;
-  gap: 10px;
+  gap: 4px;
 }
 
 #breadcrumb-site a {
@@ -277,14 +283,15 @@ h1 span {
   color: #000000a0;
   margin-bottom: 0.7em;
 }
+/* --------------------ASIDE--------------------- */
+/* --------------------ASIDE--------------------- */
+/* --------------------ASIDE--------------------- */
 
 #description aside {
   flex: 2;
-  background-color: #ff5e5d;
-  padding: 30px;
   box-sizing: border-box;
-  border-radius: 15px 15px 0 0;
   height: max-content;
+  margin-left: 5%;
 }
 
 #description aside p:first-child {
@@ -296,6 +303,12 @@ h1 span {
 #description aside p:nth-child(2) {
   font-size: 0.8em;
   line-height: 1.2em;
+}
+
+#infos-map {
+  padding: 20px;
+  background-color: #ff5e5d;
+  border-radius: 15px 15px 0 0;
 }
 
 #description button {
@@ -310,8 +323,13 @@ h1 span {
 
 #description button:hover {
   background-color: rgba(43, 43, 43);
+  cursor: pointer;
 }
 
+#description img {
+  width: 100%;
+  margin-top: 30px;
+}
 /* -------------------FOOTER---------------------- */
 /* -------------------FOOTER---------------------- */
 /* -------------------FOOTER---------------------- */
@@ -331,4 +349,10 @@ h1 span {
 #copyright a {
   text-decoration: none;
   color: #000000;
+  transition: 0.5s ease-in-out;
+}
+
+#copyright a:hover {
+  color: #ff5e5d;
+  transition: 0.5s ease-in-out;
 }
