@@ -31,7 +31,33 @@ h2 {
   background-color: #ff5e5d;
   color: #fff;
 }
+
+footer {
+  background-color: #faf1ed;
+}
 /* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+
+/* -------------------INFORMATION--------------------------- */
+#information {
+  background-color: #ff5e5d;
+  color: #fff;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 8px 0;
+}
+
+#information p::selection {
+  background-color: #fff;
+  color: #ff5e5d;
+}
+
+#information a {
+  color: #fff;
+}
+
+/* -------------------HEADER--------------------------- */
 
 #header {
   padding: 10px 0;
@@ -236,7 +262,7 @@ h1 span {
 /* ------------DESCRIPTION-------------- */
 /* ------------DESCRIPTION-------------- */
 #description {
-  margin: 40px 0;
+  margin: 40px 0 80px 0;
   display: flex;
   gap: 20px;
 }
@@ -284,4 +310,25 @@ h1 span {
 
 #description button:hover {
   background-color: rgba(43, 43, 43);
+}
+
+/* -------------------FOOTER---------------------- */
+/* -------------------FOOTER---------------------- */
+/* -------------------FOOTER---------------------- */
+
+#copyright {
+  display: flex;
+  font-size: 0.7em;
+  align-items: center;
+  padding: 20px 0;
+  color: #5d5d5d;
+}
+
+#copyright img {
+  width: 5%;
+}
+
+#copyright a {
+  text-decoration: none;
+  color: #000000;
 }
