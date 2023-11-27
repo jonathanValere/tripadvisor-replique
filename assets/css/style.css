@@ -34,6 +34,12 @@ h2 {
   color: #fff;
 }
 
+mark {
+  background-color: #ff5e5d;
+  color: #fff;
+  padding: 2px;
+}
+
 footer {
   background-color: #faf1ed;
 }
