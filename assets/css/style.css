@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,500;1,800&display=swap");
+
 /* ------------- GENERAL ------------- */
 body {
   font-family: TS-Reg, sans-serif;
@@ -35,6 +37,17 @@ h2 {
 footer {
   background-color: #faf1ed;
 }
+
+/* ---------------KEYFRAME----------------- */
+/* Part information animation */
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-80%);
+  }
+}
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -43,11 +56,18 @@ footer {
 #information {
   background-color: #ff5e5d;
   color: #fff;
-  font-size: 0.8em;
-  text-align: center;
-  padding: 8px 0;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  padding: 15px 0;
   position: fixed;
   width: 100%;
+  z-index: 999;
+  border-bottom: #ffffff 7px solid;
+}
+
+#information p {
+  animation: 30s linear 1s infinite slidein;
 }
 
 #information p::selection {
@@ -59,12 +79,16 @@ footer {
   color: #fff;
 }
 
+#information b {
+  font-weight: 500;
+}
+
 /* -------------------HEADER--------------------------- */
 /* -------------------HEADER--------------------------- */
 /* -------------------HEADER--------------------------- */
 
 #header {
-  padding: 45px 0 10px 0;
+  padding: 6% 0 10px 0;
 }
 
 #header > div:first-child {
