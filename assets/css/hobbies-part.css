@@ -1,18 +1,18 @@
 #hobbies {
-  /* width: 100%; */
   display: flex;
-  gap: 50px;
-  margin-bottom: 45px;
+  gap: 2em;
+  margin-bottom: 5em;
 }
 
 .first-part {
-  flex: 3;
+  flex: 2;
 }
 
 .first-part p {
   font-family: Georgia, "Times New Roman", Times, serif;
-  line-height: 1.4em;
+  line-height: 1.3em;
   color: rgb(102, 102, 102);
+  font-size: 18px;
 }
 
 #hobbies button {
@@ -21,10 +21,14 @@
   padding: 0px;
   margin-top: 10px;
   font-family: TS-Reg, sans-serif;
+  transition: 0.5s ease-in-out;
 }
 
 #hobbies button:hover {
   cursor: pointer;
+  text-decoration: underline;
+  color: #ff5e5d;
+  transition: 0.5s ease-in-out;
 }
 /* CARD -------------------- */
 /* CARD -------------------- */
@@ -34,6 +38,12 @@
   gap: 1em;
   flex: 7;
   overflow: scroll hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.carrousel::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
