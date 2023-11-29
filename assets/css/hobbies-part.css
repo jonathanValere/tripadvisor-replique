@@ -1,0 +1,92 @@
+#hobbies {
+  /* width: 100%; */
+  display: flex;
+  gap: 50px;
+  margin-bottom: 45px;
+}
+
+.first-part {
+  flex: 3;
+}
+
+.first-part p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.6em;
+  color: rgb(102, 102, 102);
+}
+
+#hobbies button {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin-top: 10px;
+  font-family: TS-Reg, sans-serif;
+}
+
+#hobbies button:hover {
+  cursor: pointer;
+}
+/* CARD -------------------- */
+/* CARD -------------------- */
+/* CARD -------------------- */
+.carrousel {
+  display: flex;
+  gap: 1em;
+  flex: 7;
+  overflow: scroll hidden;
+}
+
+.card {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.place-part-picture {
+  position: relative;
+}
+
+.place-part-picture img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+  transition: 0.5s ease-in-out;
+}
+
+.place-part-picture img:hover {
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px black;
+}
+
+.like {
+  padding: 0.6em;
+  font-size: 1em;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.like:hover {
+  cursor: pointer;
+  background-color: rgb(245, 245, 245);
+  transition: 0.5s ease-in-out;
+}
+
+.comments {
+  align-content: center;
+}
+.carrousel .ratings-fill {
+  font-size: 0.4em;
+}
+
+.carrousel p:last-child {
+  font-size: 0.8em;
+  color: rgb(161, 161, 161);
+  margin-bottom: 15px;
+}
