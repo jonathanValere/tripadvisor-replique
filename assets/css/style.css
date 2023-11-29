@@ -15,6 +15,10 @@ section {
 
 header {
   background-color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
 }
 
 h1,
@@ -26,7 +30,8 @@ h4 {
 
 h1 {
   font-size: 54px;
-  margin: 40px 0;
+  margin-top: 14%;
+  margin-bottom: 1%;
 }
 
 h2 {
@@ -84,7 +89,6 @@ footer {
   position: fixed;
   width: 100%;
   z-index: 999;
-  border-bottom: #ffffff 7px solid;
 }
 
 #information p {
@@ -194,6 +198,15 @@ header nav li:last-child:hover {
 
 h1 span {
   color: #ff5e5d;
+}
+
+.revenus {
+  color: #565656;
+  margin-bottom: 3%;
+  font-size: 0.9em;
+}
+.revenus a {
+  color: #565656;
 }
 
 #part {
