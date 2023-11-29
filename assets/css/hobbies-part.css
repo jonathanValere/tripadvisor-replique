@@ -11,7 +11,7 @@
 
 .first-part p {
   font-family: Georgia, "Times New Roman", Times, serif;
-  line-height: 1.6em;
+  line-height: 1.4em;
   color: rgb(102, 102, 102);
 }
 
@@ -37,8 +37,9 @@
 }
 
 .card {
-  width: 300px;
+  width: 250px;
   flex-shrink: 0;
+  margin-bottom: 15px;
 }
 
 .place-part-picture {
@@ -74,19 +75,33 @@
 
 .like:hover {
   cursor: pointer;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(0, 0, 0);
   transition: 0.5s ease-in-out;
+  color: #fff;
 }
 
+/* COMMENTS */
 .comments {
-  align-content: center;
-}
-.carrousel .ratings-fill {
-  font-size: 0.4em;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
 }
 
-.carrousel p:last-child {
+.ratings {
+  margin: 0 1px;
   font-size: 0.8em;
+  color: #00aa73;
+}
+
+.carrousel .comments p:last-child {
+  font-size: 0.8em;
+  margin-left: 9px;
   color: rgb(161, 161, 161);
-  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-city {
+  font-size: 0.8em;
+  color: rgb(103, 103, 103);
 }
