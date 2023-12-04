@@ -1,0 +1,633 @@
+/* ---------------- GLOBAL --------- */
+/* ---------------KEYFRAME----------------- */
+/* Part information animation */
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-80%);
+  }
+}
+/* --------------------------------------------------- */
+
+#information p {
+  animation: 30s linear 1s infinite slidein;
+}
+
+body {
+  font-family: TS-Reg, sans-serif;
+  font-size: 1rem;
+  --border-rounded: 10px;
+  --animation-transition: 0.5s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: TS-Med, sans-serif;
+}
+
+#information {
+  background-color: #ff5e5d;
+  color: #fff;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 0.8rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  white-space: nowrap;
+}
+
+#information a {
+  color: #fff;
+}
+
+section {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1136px;
+}
+
+h1 span {
+  color: #ff5e5d;
+}
+
+/* POUR MASQUER LA SCROLLBAR */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+#logo {
+  width: 200px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 135px 0 20px 0;
+}
+
+h2 {
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.revenus {
+  font-size: 0.9rem;
+  color: rgb(127, 127, 127);
+  margin-bottom: 30px;
+}
+
+.revenus a {
+  color: rgb(127, 127, 127);
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER------------------ */
+/* HEADER------------------ */
+/* HEADER------------------ */
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  z-index: 2;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 10px 0;
+}
+
+#header > a:first-child {
+  display: none;
+}
+
+#header > a:last-child {
+  display: none;
+}
+
+#header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  font-size: 1.1rem;
+  color: ;
+}
+
+.element-display {
+  margin-left: 10px;
+}
+
+#header nav li:last-child a {
+  padding: 0.7rem 1rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* --------------- PART BLOC -------------------- */
+/* --------------- PART BLOC -------------------- */
+/* --------------- PART BLOC -------------------- */
+/* #part {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+.bloc-part {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: 10px;
+  min-height: 70px;
+  border-radius: var(--border-rounded);
+  transition: var(--animation-transition);
+} */
+
+#part {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.bloc-part {
+  display: flex;
+  min-width: 170px;
+  min-height: 70px;
+  gap: 12px;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: var(--border-rounded);
+  transition: var(--animation-transition);
+}
+
+#part > a:nth-child(6),
+#part > a:nth-child(7) {
+  display: none;
+}
+
+/* ------------------- PICTURES ------------------- */
+/* ------------------- PICTURES ------------------- */
+/* ------------------- PICTURES ------------------- */
+
+#section-diapo {
+  margin: 30px 0;
+}
+
+#pictures {
+  height: 430px;
+  display: flex;
+  position: relative;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+#pictures img {
+  transition: var(--animation-transition);
+}
+
+#pictures > img {
+  height: 100%;
+  width: 60%;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: var(--border-rounded) 0 0 var(--border-rounded);
+}
+
+#pictures > div img {
+  object-fit: cover;
+  width: 100%;
+  height: 213px;
+}
+
+#pictures p {
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  left: 10px;
+  bottom: 10px;
+  padding: 0.6rem;
+  border-radius: var(--border-rounded);
+  font-size: 0.6rem;
+}
+
+#pictures > div img:first-child {
+  border-radius: 0 var(--border-rounded) 0 0;
+}
+
+#pictures > div img:last-child {
+  border-radius: 0 0 var(--border-rounded) 0;
+}
+
+#breadcrumb-site {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+#breadcrumb-site ul {
+  display: flex;
+  gap: 6px;
+}
+
+/* ---------------- DESCRIPTION ------------ */
+/* ---------------- DESCRIPTION ------------ */
+/* ---------------- DESCRIPTION ------------ */
+#description {
+  margin: 50px 0;
+  line-height: 1.3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  gap: 40px;
+}
+
+article {
+  flex: 8;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+article p {
+  color: #4c4c4c;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  background-color: #ff5e5d;
+  border-radius: var(--border-rounded) var(--border-rounded) 0 0;
+  height: 100%;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+#infos-map {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+#infos-map a {
+  background-color: rgb(0, 0, 0);
+  border-radius: var(--border-rounded);
+  color: #fff;
+  max-width: 138px;
+  font-size: 1rem;
+  white-space: nowrap;
+  padding: 7px;
+  font-family: TS-Med, sans-serif;
+}
+
+#infos-map p:first-child {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-family: TS-Med, sans-serif;
+}
+
+/* ------------- SECTION HOBBIES ---------------- */
+/* ------------- SECTION HOBBIES ---------------- */
+/* ------------- SECTION HOBBIES ---------------- */
+#section-hobbies {
+  margin: 40px 0;
+}
+
+#hobbies {
+  display: flex;
+  gap: 30px;
+}
+
+.first-part {
+  flex: 4;
+}
+
+.first-part p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 15px;
+  color: rgb(83, 83, 83);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.first-part a {
+  text-decoration: underline;
+}
+
+.carrousel {
+  flex: 8;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 40%;
+  gap: 20px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.card {
+  width: 250px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 160px;
+  border-radius: var(--border-rounded);
+  transition: 0.5s ease-in-out;
+}
+
+.like {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 999;
+  transition: var(--animation-transition);
+}
+
+.infos-card {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.infos-city,
+.comments {
+  margin-bottom: 10px;
+}
+
+.comments {
+  display: flex;
+  align-items: flex-end;
+  font-size: 0.9rem;
+  gap: 14px;
+}
+
+.ratings {
+  display: flex;
+  gap: 0.1rem;
+  color: #01aa6c;
+}
+.comments > p {
+  color: #9f9f9f;
+  font-size: 0.8rem;
+}
+
+.info-city {
+  font-size: 0.9rem;
+  color: #9f9f9f;
+}
+
+/* ------------ FOOTER ----------- */
+/* ------------ FOOTER ----------- */
+/* ------------ FOOTER ----------- */
+
+footer {
+  background-color: #faf1ed;
+  padding: 25px 0;
+  margin-top: 80px;
+}
+
+#copyright {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+#copyright img {
+  width: 3rem;
+}
+
+#copyright a {
+  transition: var(--animation-transition);
+}
+
+/* -----------HOVER--------- */
+
+.bloc-part:hover {
+  background-color: black;
+  color: #fff;
+  transition: var(--animation-transition);
+}
+#pictures img:hover {
+  opacity: 0.8;
+  transition: var(--animation-transition);
+}
+
+.card:hover img {
+  opacity: 0.8;
+  transition: var(--animation-transition);
+}
+
+.like:hover {
+  background-color: black;
+  color: #fff;
+  transition: var(--animation-transition);
+}
+
+#copyright a:hover {
+  color: #ff5e5d;
+  transition: var(--animation-transition);
+}
+
+/* ---------------- /GLOBAL --------- */
+
+/* ------- Style under 1184px ----- */
+/* ------- Style under 1184px ----- */
+/* ------- Style under 1184px ----- */
+@media (max-width: 1184px) {
+  /* BLOC PART------------------ */
+  /* BLOC PART------------------ */
+  /* BLOC PART------------------ */
+
+  #part {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  .bloc-part {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 10px;
+    min-height: 70px;
+    border-radius: var(--border-rounded);
+    transition: var(--animation-transition);
+  }
+
+  #part > a:nth-child(7),
+  #part > a:nth-child(6) {
+    display: contents;
+  }
+}
+
+/* ------- Style under 1024px ----- */
+@media (max-width: 1024px) {
+  section {
+    max-width: 1024px;
+  }
+
+  .element-display {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  /* ---------- HEADER ----------- */
+
+  /* --------------- PART BLOC -------------------- */
+  /* --------------- PART BLOC -------------------- */
+  /* --------------- PART BLOC -------------------- */
+
+  /* ------------------- PICTURES ------------------- */
+  /* ------------------- PICTURES ------------------- */
+  /* ------------------- PICTURES ------------------- */
+
+  /* ---------------- DESCRIPTION ------------ */
+  /* ---------------- DESCRIPTION ------------ */
+  /* ---------------- DESCRIPTION ------------ */
+
+  /* ------------- SECTION HOBBIES ---------------- */
+  /* ------------- SECTION HOBBIES ---------------- */
+  /* ------------- SECTION HOBBIES ---------------- */
+
+  /* ------------ FOOTER ----------- */
+}
+/* ------- Based on 768px width ----- */
+
+/*----------STYLE UNDER 769px------------*/
+@media (max-width: 768px) {
+  section {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    padding-top: 50px;
+  }
+
+  #header > a:first-child {
+    display: contents;
+  }
+
+  #header > a:last-child {
+    display: contents;
+  }
+
+  #header nav li {
+    display: none;
+  }
+
+  #header i {
+    padding: 1rem;
+  }
+
+  #logo {
+    width: 9rem;
+    object-fit: cover;
+  }
+
+  /* --------------- PART BLOC -------------------- */
+  /* --------------- PART BLOC -------------------- */
+  /* --------------- PART BLOC -------------------- */
+
+  #part {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  .bloc-part {
+    display: flex;
+    min-height: auto;
+    min-width: 150px;
+    white-space: nowrap;
+    gap: 12px;
+  }
+
+  /* ------------------- PICTURES ------------------- */
+  /* ------------------- PICTURES ------------------- */
+  /* ------------------- PICTURES ------------------- */
+
+  #section-diapo {
+    margin: 0;
+  }
+
+  #pictures {
+    height: 300px;
+  }
+
+  #pictures > img {
+    width: 100%;
+    border-radius: var(--border-rounded);
+  }
+
+  #pictures > :last-child {
+    display: none;
+  }
+
+  #breadcrumb-site {
+    display: none;
+  }
+
+  /* ------------- SECTION HOBBIES ---------------- */
+  /* ------------- SECTION HOBBIES ---------------- */
+  /* ------------- SECTION HOBBIES ---------------- */
+  #hobbies {
+    flex-direction: column;
+  }
+
+  .carrousel {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .card {
+    width: 240px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
