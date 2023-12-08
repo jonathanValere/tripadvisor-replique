@@ -177,21 +177,6 @@ header {
 /* --------------- PART BLOC -------------------- */
 /* --------------- PART BLOC -------------------- */
 /* --------------- PART BLOC -------------------- */
-/* #part {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  margin-bottom: 20px;
-}
-.bloc-part {
-  display: flex;
-  border: 1px solid black;
-  justify-content: space-between;
-  padding: 10px;
-  min-height: 70px;
-  border-radius: var(--border-rounded);
-  transition: var(--animation-transition);
-} */
 
 #part {
   display: flex;
@@ -525,32 +510,13 @@ footer {
   .element-display {
     display: none;
   }
-
+  /* ---------------- DESCRIPTION ------------ */
+  /* ---------------- DESCRIPTION ------------ */
+  /* ---------------- DESCRIPTION ------------ */
   aside {
     display: none;
   }
-
-  /* ---------- HEADER ----------- */
-
-  /* --------------- PART BLOC -------------------- */
-  /* --------------- PART BLOC -------------------- */
-  /* --------------- PART BLOC -------------------- */
-
-  /* ------------------- PICTURES ------------------- */
-  /* ------------------- PICTURES ------------------- */
-  /* ------------------- PICTURES ------------------- */
-
-  /* ---------------- DESCRIPTION ------------ */
-  /* ---------------- DESCRIPTION ------------ */
-  /* ---------------- DESCRIPTION ------------ */
-
-  /* ------------- SECTION HOBBIES ---------------- */
-  /* ------------- SECTION HOBBIES ---------------- */
-  /* ------------- SECTION HOBBIES ---------------- */
-
-  /* ------------ FOOTER ----------- */
 }
-/* ------- Based on 768px width ----- */
 
 /*----------STYLE UNDER 769px------------*/
 @media (max-width: 768px) {
