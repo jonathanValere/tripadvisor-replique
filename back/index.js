@@ -53,5 +53,5 @@ app.all("*", (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log("Server on fire 🔥");
+  console.log("3, 2, 1 Server started 🚀");
 });

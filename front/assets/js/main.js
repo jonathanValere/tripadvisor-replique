@@ -37,7 +37,10 @@ $.addEventListener("DOMContentLoaded", () => {
     // console.log(data);
 
     // const response = await axios.post("http://localhost:5500/form", data);
-    const response = await axios.post("http://localhost:3000/form", data);
+    const response = await axios.post(
+      "https://site--backend-tripadvisor--lkcrzmx4xyh5.code.run/form",
+      data
+    );
     console.log("Front>>>", response);
   });
 });
