@@ -8,13 +8,13 @@
     transform: translateX(100%);
   }
   to {
-    transform: translateX(-80%);
+    transform: translateX(-100%);
   }
 }
 /* --------------------------------------------------- */
 
 #information p {
-  animation: 30s linear 4s infinite slidein;
+  animation: 20s linear 4s infinite slidein;
 }
 
 body {
@@ -33,7 +33,6 @@ h4 {
 }
 
 #information {
-  /* background-color: #ff5e5d; */
   background-color: #6b5dff;
   color: #fff;
   font-family: "Exo 2", sans-serif;
@@ -48,6 +47,8 @@ h4 {
 
 #information a {
   color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 section {
