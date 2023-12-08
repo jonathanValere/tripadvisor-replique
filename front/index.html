@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/style-media.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script> -->
     <script
       src="https://kit.fontawesome.com/3444e77560.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/main.js"></script>
     <title>Tripadvisor réplique</title>
   </head>
   <body>
@@ -32,10 +35,51 @@
           et à but non commercial.
         </p>
       </div>
+      <div class="modal">
+        <div>
+          <div class="bloc-forms">
+            <i class="fa-solid fa-xmark close-modal"></i>
+            <p>Formulaire de contact</p>
+            <form class="forms-style">
+              <label for="firstname"
+                ><input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="firstname"
+              /></label>
+              <label for="lastname"
+                ><input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="lastname"
+              /></label>
+              <label for="email"
+                ><input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email"
+              /></label>
+              <label for="message">
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="message"
+                ></textarea>
+              </label>
+              <button type="submit">Envoyer le formulaire</button>
+            </form>
+          </div>
+        </div>
+      </div>
       <section>
         <div id="header">
           <a href="#"
-            ><div>
+            ><div id="menu-hamburger">
               <i class="fa-solid fa-bars"></i></div
           ></a>
           <a href="#">
@@ -66,7 +110,7 @@
                   ><span class="element-display">Alertes</span>
                 </a>
               </li>
-              <li class=""><a href="#">Connectez-vous</a></li>
+              <li id="modal-form">Connectez-vous</li>
             </ul>
           </nav>
           <a href="#">
@@ -207,8 +251,9 @@
               <a href="#">Créez un voyage</a>
             </div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2037724.6038829335!2d-54.43277827048441!3d4.0345306900305005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d12155785f7d753%3A0xde27f7e90f0af446!2sGuyane%20fran%C3%A7aise!5e0!3m2!1sfr!2sfr!4v1701031747248!5m2!1sfr!2sfr"
-              width="100%"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2037724.6039368438!2d-54.43273175669813!3d4.034530668539315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d12155785f7d753%3A0xde27f7e90f0af446!2sGuyane%20fran%C3%A7aise!5e0!3m2!1sfr!2sfr!4v1701973389406!5m2!1sfr!2sfr"
+              width="400"
+              height="200"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -254,10 +299,10 @@
               <li class="card">
                 <div class="place-part-picture">
                   <i class="fa-regular fa-heart like"></i>
-                  <img src="./assets/img/hotel-ker-alberte.jpg" alt="" />
+                  <img src="./assets/img/chambre-double.jpg" alt="" />
                 </div>
                 <div class="infos-card">
-                  <h4>Hôtel Ker Alberte</h4>
+                  <h4>Hôtel Atlantis</h4>
                   <div class="comments">
                     <div class="ratings">
                       <i class="fa-solid fa-circle ratings"></i>
@@ -266,9 +311,9 @@
                       <i class="fa-solid fa-circle ratings"></i>
                       <i class="fa-solid fa-circle-half-stroke ratings"></i>
                     </div>
-                    <p>154</p>
+                    <p>105</p>
                   </div>
-                  <p class="info-city">Cayenne, Guyane Française</p>
+                  <p class="info-city">Kourou, Guyane Française</p>
                 </div>
               </li>
               <!-- /CARD -->
@@ -276,10 +321,10 @@
               <li class="card">
                 <div class="place-part-picture">
                   <i class="fa-regular fa-heart like"></i>
-                  <img src="./assets/img/hotel-ker-alberte.jpg" alt="" />
+                  <img src="./assets/img/lodges-balourou.jpg" alt="" />
                 </div>
                 <div class="infos-card">
-                  <h4>Hôtel Ker Alberte</h4>
+                  <h4>Lodge Balourou</h4>
                   <div class="comments">
                     <div class="ratings">
                       <i class="fa-solid fa-circle ratings"></i>
@@ -288,9 +333,9 @@
                       <i class="fa-solid fa-circle ratings"></i>
                       <i class="fa-solid fa-circle-half-stroke ratings"></i>
                     </div>
-                    <p>154</p>
+                    <p>75</p>
                   </div>
-                  <p class="info-city">Cayenne, Guyane Française</p>
+                  <p class="info-city">Rémire-Montjoly, Guyane Française</p>
                 </div>
               </li>
               <!-- /CARD -->
@@ -298,10 +343,10 @@
               <li class="card">
                 <div class="place-part-picture">
                   <i class="fa-regular fa-heart like"></i>
-                  <img src="./assets/img/hotel-ker-alberte.jpg" alt="" />
+                  <img src="./assets/img/la-marmotte.jpg" alt="" />
                 </div>
                 <div class="infos-card">
-                  <h4>Hôtel Ker Alberte</h4>
+                  <h4>La Marmotte</h4>
                   <div class="comments">
                     <div class="ratings">
                       <i class="fa-solid fa-circle ratings"></i>
@@ -310,9 +355,9 @@
                       <i class="fa-solid fa-circle ratings"></i>
                       <i class="fa-solid fa-circle-half-stroke ratings"></i>
                     </div>
-                    <p>154</p>
+                    <p>51</p>
                   </div>
-                  <p class="info-city">Cayenne, Guyane Française</p>
+                  <p class="info-city">Matoury, Guyane Française</p>
                 </div>
               </li>
               <!-- /CARD -->
@@ -320,10 +365,10 @@
               <li class="card">
                 <div class="place-part-picture">
                   <i class="fa-regular fa-heart like"></i>
-                  <img src="./assets/img/hotel-ker-alberte.jpg" alt="" />
+                  <img src="./assets/img/amazonia.jpg" alt="" />
                 </div>
                 <div class="infos-card">
-                  <h4>Hôtel Ker Alberte</h4>
+                  <h4>Hôtel Amazonia du fleuve</h4>
                   <div class="comments">
                     <div class="ratings">
                       <i class="fa-solid fa-circle ratings"></i>
@@ -332,9 +377,11 @@
                       <i class="fa-solid fa-circle ratings"></i>
                       <i class="fa-solid fa-circle-half-stroke ratings"></i>
                     </div>
-                    <p>154</p>
+                    <p>74</p>
                   </div>
-                  <p class="info-city">Cayenne, Guyane Française</p>
+                  <p class="info-city">
+                    Saint-laurent du Maroni, Guyane Française
+                  </p>
                 </div>
               </li>
               <!-- /CARD -->
@@ -372,5 +419,21 @@
         </div>
       </section>
     </footer>
+    <div class="menu-smartphone">
+      <menu>
+        <li>
+          <a href="#"><i class="fa-solid fa-x close-menu"></i></a>
+        </li>
+        <li class="to-connect"><a href="#">Connectez-vous</a></li>
+        <li><a href="#">Ecrire un avis</a></li>
+        <li><a href="#">Publier des photos</a></li>
+        <li><a href="#">Alertes</a></li>
+        <li><a href="#">Voyages</a></li>
+        <li><a href="#">Réservations</a></li>
+        <hr />
+        <li><a href="#">coucou</a></li>
+        <li><a href="#">Paramètres</a></li>
+      </menu>
+    </div>
   </body>
 </html>
