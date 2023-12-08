@@ -1,38 +1,15 @@
 const $ = document;
 
-//  Gestion du scroll --------------------------- A REGLER
-// const stopScroll = () => {
-//   window.addEventListener("scroll", () => {
-//     let scroll = window.scrollY; // Axe Y
-//     if (scroll) {
-//       window.scroll(0, 0);
-//     }
-//   });
-// };
-
-// const playScroll = () => {
-//   window.addEventListener("scroll", () => {
-//     let scroll = window.scrollY; // Axe Y
-//     if (scroll === 0) {
-//       window.scrollY;
-//     }
-//     console.log(scroll);
-//   });
-// };
-//  ---------------------------
-
 $.addEventListener("DOMContentLoaded", () => {
   console.log("document loaded");
 
   // Afficher modal----------------
   $.querySelector("#modal-form").addEventListener("click", (e) => {
-    console.log("j'affiche le modal");
     $.documentElement.style.overflow = "hidden"; // Gestion Scroll
     return ($.querySelector(".modal").style.display = "initial");
   });
   $.querySelector(".close-modal").addEventListener("click", (e) => {
     $.documentElement.style.overflow = "initial"; // Gestion Scroll
-    console.log("je masque le modal");
     return ($.querySelector(".modal").style.display = "none");
   });
   // ---------------
