@@ -1,0 +1,60 @@
+@import url("./fonts.css");
+
+/*  VARIABLES */
+:root {
+  --border-rounded: 10px;
+  --animation-transition: 0.5s ease-in-out;
+  --primary-color: #ff5e5d;
+}
+
+body {
+  font-family: TS-Reg, sans-serif;
+  font-size: 1rem;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: TS-Med, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 135px 0 20px 0;
+}
+
+h2 {
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+section {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1136px;
+}
+
+/* ---------------KEYFRAME----------------- */
+/* Part information animation */
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* --------------------------------------------------- */

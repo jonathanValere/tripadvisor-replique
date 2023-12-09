@@ -1,0 +1,35 @@
+.container {
+  background-image: url("../img/discovery.jpg");
+  background-position: left;
+  padding: 30% 3% 3% 3%;
+  border-radius: var(--border-rounded);
+}
+
+.container p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 2%;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.container span {
+  font-family: "TS-Med", sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.container button {
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 1.5% 3%;
+  font-size: 1rem;
+  border-radius: 20rem;
+  transition: var(--animation-transition);
+}
+
+.container button:hover {
+  background-color: #eaeaea;
+  transition: var(--animation-transition);
+}

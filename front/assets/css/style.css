@@ -1,35 +1,11 @@
+@import url("./general.css");
 @import url("./forms.css");
+@import url("./discovery.css");
 
 /* ---------------- GLOBAL --------- */
-/* ---------------KEYFRAME----------------- */
-/* Part information animation */
-@keyframes slidein {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-/* --------------------------------------------------- */
 
 #information p {
   animation: 20s linear 4s infinite slidein;
-}
-
-body {
-  font-family: TS-Reg, sans-serif;
-  font-size: 1rem;
-  --border-rounded: 10px;
-  --animation-transition: 0.5s ease-in-out;
-  position: relative;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: TS-Med, sans-serif;
 }
 
 #information {
@@ -51,14 +27,8 @@ h4 {
   font-weight: 500;
 }
 
-section {
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 1136px;
-}
-
 h1 span {
-  color: #ff5e5d;
+  color: var(--primary-color);
 }
 
 /* POUR MASQUER LA SCROLLBAR */
@@ -69,27 +39,6 @@ h1 span {
 
 #logo {
   width: 200px;
-}
-
-h1 {
-  font-size: 3rem;
-  margin: 135px 0 20px 0;
-}
-
-h2 {
-  font-size: 1.7rem;
-  line-height: 2.2rem;
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-}
-
-h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
 }
 
 .revenus {
@@ -293,7 +242,7 @@ aside {
   display: flex;
   flex-direction: column;
   flex: 4;
-  background-color: #ff5e5d;
+  background-color: var(--primary-color);
   border-radius: var(--border-rounded) var(--border-rounded) 0 0;
   height: 100%;
   font-size: 1.1rem;
@@ -467,7 +416,7 @@ footer {
 }
 
 #copyright a:hover {
-  color: #ff5e5d;
+  color: var(--primary-color);
   transition: var(--animation-transition);
 }
 
