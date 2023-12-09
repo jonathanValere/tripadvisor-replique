@@ -1,6 +1,7 @@
 .container {
   background-image: url("../img/discovery.jpg");
   background-position: left;
+  background-repeat: none;
   padding: 30% 3% 3% 3%;
   border-radius: var(--border-rounded);
 }

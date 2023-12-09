@@ -471,6 +471,18 @@ footer {
 
 /*----------STYLE UNDER 769px------------*/
 @media (max-width: 768px) {
+  /* DISCOVERY SECTION */
+  .container {
+    background-position: right;
+  }
+  .container span {
+    font-size: 2rem;
+  }
+
+  .container button {
+    padding: 4% 7%;
+    margin-bottom: 3%;
+  }
   /* ---------MENU SMARTPHONE----------- */
 
   .menu-smartphone {
