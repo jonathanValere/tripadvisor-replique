@@ -471,6 +471,20 @@ footer {
 
 /*----------STYLE UNDER 769px------------*/
 @media (max-width: 768px) {
+  /* INFORMATION */
+  @keyframes slidein {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-250%);
+    }
+  }
+
+  #information p {
+    animation: 10s linear 4s infinite slidein;
+  }
+
   /* DISCOVERY SECTION */
   .container {
     background-position: right;
